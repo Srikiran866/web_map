@@ -1,0 +1,61 @@
+body{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+#map{
+    
+    width: 100vw;
+    height:100vh;
+}
+
+
+
+.mousePosition{
+    position:fixed;
+    top:auto;
+    right:auto;
+    bottom: 5px;
+    left:50%;
+    transform: translate(-50%);
+    border:1px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(225, 225, 225, 0.6);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.header{
+    grid-area: header;
+    font-size: 25px;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-areas: 
+       
+       'left  right';
+}
+
+.left{
+    grid-area: left;
+    width:20vw;
+    height:100vh;
+    border: 5px solid grey;
+
+}
+.toc{
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.right{
+    grid-area: right;
+    width:80vw;
+    height:100vh;
+    border: 5px solid grey;
+
+}
